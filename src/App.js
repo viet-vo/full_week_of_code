@@ -17,7 +17,7 @@ class App extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            full week of code
+            full week of code start
           </a>
         </header>
       </div>
