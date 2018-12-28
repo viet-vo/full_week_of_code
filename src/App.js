@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './v2.png';
 import './App.css';
+import Signin from './comp/Signin';
 
 class App extends Component {
+  handleClick() {
+    console.log('info')
+  }
   render() {
     return (
       <div className="App">
+        <Signin></Signin>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
@@ -13,7 +18,7 @@ class App extends Component {
           </p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://github.com/viet-vo/full_week_of_code"
             target="_blank"
             rel="noopener noreferrer"
           >
