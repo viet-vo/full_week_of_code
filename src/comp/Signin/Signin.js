@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "./Signin.css";
 
 class Signin extends Component {
   // Setting the initial values of this.state.username and this.state.password
@@ -27,35 +28,41 @@ class Signin extends Component {
 
   render() {
     return (
-        
-      <form>
-          <div
-          className="form-group">
-        <label>Email Address {this.state.username}</label>
-        <input
-          type="text"
-          className="form-control"
-          placeholder="Username"
-          name="username"
-          value={this.state.username}
-          onChange={this.handleInputChange}
-        />
+        <div className="row">
+        <div className="col-5"></div>
+            <div className="card text-center" id="signincard">    
+                <form>
+                    <div
+                    className="form-group">
+                    <label>Email Address </label>
+                    <input
+                    type="text"
+                    className="form-control"
+                    placeholder="Username"
+                    name="username"
+                    value={this.state.username}
+                    onChange={this.handleInputChange}
+                    />
+                    </div>
+                    <label>Password </label>
+                    <div className="form-group">
+                    <input
+                    type="password"
+                    className="form-control"
+                    placeholder="Password"
+                    name="password"
+                    value={this.state.password}
+                    onChange={this.handleInputChange}
+                    />
+                    </div>
+                    <button 
+                    className="btn-primary"
+                    onClick={this.handleFormSubmit}
+                    path="/">Submit</button>
+                </form>
+            </div>   
         </div>
-        <label>Password {this.state.password}</label>
-        <div className="form-group">
-        <input
-          type="password"
-          className="form-control"
-          placeholder="Password"
-          name="password"
-          value={this.state.password}
-          onChange={this.handleInputChange}
-        />
-        </div>
-        <button 
-        className="btn-primary"
-        onClick={this.handleFormSubmit}>Submit</button>
-      </form>
+
     );
   }
 }

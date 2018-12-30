@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import logo from './v2.png';
 import './App.css';
-import Signin from './comp/Signin';
+// import Signin from './comp/Signin';
+// import Original from './comp/Original';
+import Navbar from './comp/Navbar'
 
 class App extends Component {
   handleClick() {
@@ -10,21 +11,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Signin></Signin>
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://github.com/viet-vo/full_week_of_code"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            full week of code start
-          </a>
-        </header>
+      <Navbar></Navbar>
+        {/* <Signin></Signin> */}
+        {/* <Original></Original> */}
       </div>
     );
   }
